@@ -1,11 +1,51 @@
 {
-  "name": "bombq",
-  "version": "1.0.0",
-  "description": "online store",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "BombQ",
+  "version": "0.1.0",
+  "private": true,
+  "author":"ghost-tremble",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@popperjs/core": "^2.10.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
+    "fontsource-roboto": "^4.0.0",
+    "framer": "^1.3.6",
+    "node-sass": "^6.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^7.15.4",
+    "react-icons": "^4.3.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "3.4.3",
+    "react-scroll": "^1.8.4",
+    "resize-observer-polyfill": "^1.5.1",
+    "styled-components": "^5.3.1",
+    "yup": "^0.32.9"
   },
-  "author": "ghost-tremblecls",
-  "license": "ISC"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
