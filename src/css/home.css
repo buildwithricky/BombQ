@@ -1,0 +1,60 @@
+.home-section {
+  height: 74vh;
+}
+
+.hero {
+  display: grid;
+  height: 74vh;
+  grid-template-columns: repeat(12, 1fr);
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  grid-column: 1 / 7;
+}
+.content h1 {
+  font-size: 2rem;
+  padding: 10px;
+}
+.content h4 {
+  color: rgb(111, 111, 134);
+  font-style: normal;
+  padding: 10px;
+}
+.image {
+  height: 60vh;
+  width: 30vw;
+  padding: 10px;
+}
+.image-slide {
+  grid-column: 7/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-now-btn {
+  color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: larger;
+  transition: 0.5s;
+  display: block;
+  margin-left: 50px;
+  padding-left: 15px;
+}
+.shop-now-btn:hover {
+  color: rgb(39, 39, 53);
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    display: block;
+  }
+  .image {
+    height: 50vh;
+    width: 80vw;
+  }
+}

@@ -1,0 +1,145 @@
+.nav-container {
+  display: flex;
+
+  justify-content: center;
+}
+.nav-header {
+  width: 50%;
+}
+.nav-header .logo {
+  padding: 15px;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.bars {
+  display: none;
+}
+.nav-desk {
+  align-self: center;
+}
+
+.nav-desk nav ul {
+  list-style: none;
+
+  margin-left: auto;
+}
+.nav-desk nav ul li {
+  display: inline;
+}
+.nav-desk nav ul li a {
+  color: #000;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  width: 60px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  margin: 4px 10px;
+
+  transition: 0.3s;
+}
+.nav-desk nav ul li a:hover {
+  color: rgb(187, 57, 57);
+}
+.cart-icon {
+  font-size: 2.8rem;
+  padding: 2px;
+  cursor: pointer;
+}
+.cart-icon span {
+  font-size: 0.8rem;
+  position: absolute;
+  transform: translate(-20px, 8px);
+}
+
+.nav-mobile {
+  display: none;
+}
+
+/* for mobile devices */
+
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .nav-container {
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .bars {
+    display: block;
+    overflow-x: hidden;
+    align-self: center;
+    display: flex;
+    padding: 5px 10px;
+  }
+  .top {
+    align-self: start;
+    position: absolute;
+    overflow-x: hidden;
+    right: 0;
+    z-index: 4;
+  }
+  .nav-header .logo {
+    margin-right: auto;
+    margin-top: 1.3rem;
+  }
+  .nav-header {
+    display: flex;
+    padding: 10px;
+    overflow-x: hidden;
+
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+  }
+  .nav-desk nav ul {
+    display: none;
+  }
+
+  .nav-mobile {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    visibility: hidden;
+    right: 0;
+    width: 0px;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+  .show {
+    visibility: visible;
+    width: 33%;
+  }
+  .nav-mobile ul {
+    padding: 2rem;
+
+    list-style: none;
+  }
+  .nav-mobile ul li {
+    padding: 10px 15px;
+  }
+  .nav-mobile ul li a {
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .nav-mobile ul li a:hover {
+    cursor: pointer;
+    color: rgb(51, 48, 48);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .show {
+    visibility: visible;
+    width: 100%;
+  }
+}
