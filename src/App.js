@@ -45,7 +45,11 @@ export const App = () => {
   const location = useLocation();
   return (
     <div className="parent">
-      <NavBar cart={cart.length} setOpenCart={setOpenCart} />
+      <NavBar
+        cart={cart.length}
+        setOpenCart={setOpenCart}
+        isCartOpen={isCartOpen}
+      />
       <Cart
         cart={cart}
         setCart={setCart}

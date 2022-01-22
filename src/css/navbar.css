@@ -1,10 +1,9 @@
 .nav-container {
   display: flex;
-
-  justify-content: center;
+  flex-direction: row;
 }
 .nav-header {
-  width: 50%;
+  margin-right: auto;
 }
 .nav-header .logo {
   padding: 15px;
@@ -14,6 +13,7 @@
 
 .bars {
   display: none;
+  align-items: center;
 }
 .nav-desk {
   align-self: center;
@@ -21,22 +21,21 @@
 
 .nav-desk nav ul {
   list-style: none;
-
-  margin-left: auto;
+  display: flex;
 }
 .nav-desk nav ul li {
   display: inline;
+  display: flex;
+  align-items: center;
 }
 .nav-desk nav ul li a {
   color: #000;
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
-  width: 60px;
   padding: 10px 10px;
   border: 1px solid transparent;
   margin: 4px 10px;
-
   transition: 0.3s;
 }
 .nav-desk nav ul li a:hover {
@@ -65,18 +64,20 @@
     overflow-x: hidden;
   }
   .nav-container {
-    justify-content: center;
     overflow-x: hidden;
   }
   .bars {
     display: block;
     overflow-x: hidden;
     align-self: center;
+    justify-self: baseline;
+
     display: flex;
     padding: 5px 10px;
   }
   .top {
     align-self: start;
+
     position: absolute;
     overflow-x: hidden;
     right: 0;
@@ -89,9 +90,10 @@
   .nav-header {
     display: flex;
     padding: 10px;
+
     overflow-x: hidden;
 
-    width: 90%;
+    width: 100%;
     justify-self: center;
     align-self: center;
   }
@@ -110,7 +112,7 @@
     width: 0px;
     top: 0;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease;
   }
   .show {
     visibility: visible;

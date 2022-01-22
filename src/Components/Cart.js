@@ -12,36 +12,44 @@ const Cart = ({
   console.log(total);
   return (
     <div className={isCartOpen ? "cart-main" : "cart-main open-cart"}>
-      <h1
-        onClick={() => setOpenCart(true)}
-        style={{
-          padding: "10px",
-          cursor: "pointer",
-        }}>
-        <AiOutlineClose />
-      </h1>{" "}
-      {cart.map((item, index) => {
-        return (
-          <CartItem
-            deleteItem={deleteItem}
-            name={item.name}
-            image={item.image}
-            price={item.price}
-            id={item.id}
-            total={total}
-            key={index}
-          />
-        );
-      })}{" "}
-      <p>Total price $ {total}</p>
-      <div className="clear-btn">
-        <button
-          onClick={() => {
-            setCart([]);
-            setOpenCart(true);
+      <div className="cart-content">
+        <h1
+          onClick={() => setOpenCart(true)}
+          style={{
+            padding: "10px",
+            cursor: "pointer",
           }}>
-          clear cart
-        </button>
+          <AiOutlineClose />
+        </h1>{" "}
+        {cart.length < 1 ? (
+          <div className="emptycart">
+            there are currently no items in your cart
+          </div>
+        ) : (
+          cart.map((item, index) => {
+            return (
+              <CartItem
+                deleteItem={deleteItem}
+                name={item.name}
+                image={item.image}
+                price={item.price}
+                id={item.id}
+                total={total}
+                key={index}
+              />
+            );
+          })
+        )}{" "}
+        <p>Total price $ {total}</p>
+        <div className="clear-btn">
+          <button
+            onClick={() => {
+              setCart([]);
+              setOpenCart(true);
+            }}>
+            clear cart
+          </button>
+        </div>
       </div>
     </div>
   );

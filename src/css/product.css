@@ -65,16 +65,29 @@
   right: 0;
   width: 0px;
   top: 0;
+  border: 1px soild red;
   color: #000;
   overflow-x: hidden;
-  transition: 0.3s;
+  transition: width 0.3s ease-in-out;
   overflow-y: auto;
+}
+.content h3 {
+  cursor: pointer;
 }
 
 .open-cart {
   width: 30%;
 }
 
+.cart-content {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+}
+.cart-content .emptycart {
+  align-self: center;
+  padding: 1rem;
+}
 .cart-item-container {
   display: flex;
 
@@ -99,7 +112,9 @@
 .clear-btn button {
   padding: 10px 10px;
   border: none;
+  background-color: rgb(207, 85, 255);
   cursor: pointer;
+  border-radius: 3px;
 }
 @media screen and (max-width: 768px) {
   .main-image {

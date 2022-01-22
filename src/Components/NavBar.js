@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "../css/navbar.css";
 import { Link } from "react-router-dom";
-import { Turn as Hamburger } from "hamburger-react";
+import Hamburger from "./nav-ham/Hamburger";
 import logo from "../images/Logo/BombQ.png";
 import CartIcon from "./cart-icon/cart-icon.jsx";
-import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const NavBar = ({ setOpenCart, cart }) => {
   const [show, setShow] = useState(true);
@@ -22,11 +21,7 @@ const NavBar = ({ setOpenCart, cart }) => {
             }}>
             <CartIcon itemCount={cart} />
           </li>
-          <Hamburger
-            color={show ? "#000" : "#fff"}
-            toggled={show}
-            toggle={setShow}
-          />
+          <Hamburger show={show} setShow={setShow} />
         </div>
       </div>
       <div className="nav-desk">
@@ -37,6 +32,12 @@ const NavBar = ({ setOpenCart, cart }) => {
             </li>
             <li>
               <Link to="/store">Store</Link>
+            </li>
+            <li
+              onClick={() => {
+                setOpenCart(false);
+              }}>
+              <CartIcon itemCount={cart} />
             </li>
           </ul>
         </nav>
@@ -61,8 +62,7 @@ const NavBar = ({ setOpenCart, cart }) => {
                 }}>
                 Store
               </Link>
-            </li>
-            6{" "}
+            </li>{" "}
           </ul>
         </nav>
       </div>
