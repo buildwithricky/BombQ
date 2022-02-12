@@ -11,6 +11,7 @@ import Product from "./Components/ProductTemplate";
 import storeData from "./data/catalog";
 
 import Cart from "./Components/Cart";
+import Checkout from "./Components/checkout";
 
 const Store = React.lazy(() => import("./Components/Store"));
 export const App = () => {
@@ -93,6 +94,16 @@ export const App = () => {
               cart={cart}
               isCartOpen={isCartOpen}
               setOpenCart={setOpenCart}
+            />
+          </Route>
+          <Route path="/checkout">
+            <Checkout
+              cart={cart}
+              setCart={setCart}
+              deleteItem={deleteItem}
+              setOpenCart={setOpenCart}
+              isCartOpen={isCartOpen}
+              total={total}
             />
           </Route>
         </Switch>

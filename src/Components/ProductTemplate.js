@@ -5,6 +5,7 @@ import PreloadImage from "react-preload-image";
 import "../css/product.css";
 import Cart from "./Cart";
 import Add from "./Add";
+import Modal from "./modal-component/modal";
 const Product = ({ data, cart, setCart, isCartOpen, setOpenCart }) => {
   const { id } = useParams();
   const routeNum = parseInt(id);
@@ -12,6 +13,8 @@ const Product = ({ data, cart, setCart, isCartOpen, setOpenCart }) => {
   const products = singlePage.style;
   const [added, setAdded] = useState(false);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState([]);
   //use effect to display an added alert
   useEffect(() => {
     let c = setTimeout(() => {
@@ -24,6 +27,12 @@ const Product = ({ data, cart, setCart, isCartOpen, setOpenCart }) => {
 
   return (
     <>
+      <Modal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        modalData={modalData}
+        setCart={setCart}
+      />
       {added && <Add />}
       {singlePage.map((single, index) => {
         const { id, name, image, style } = single;
@@ -50,8 +59,13 @@ const Product = ({ data, cart, setCart, isCartOpen, setOpenCart }) => {
               {style.map((single, index) => {
                 const { image, name } = single;
                 return (
-                  <div className="product-card" key={index}>
-                    <h3>{name}</h3>
+                  <div
+                    className="product-card"
+                    key={index}
+                    onClick={() => {
+                      setModalData(single);
+                      setIsModalOpen(true);
+                    }}>
                     <PreloadImage className="product-img" src={image} />
                     <div className="btn-grp">
                       <p>${single.price}</p>

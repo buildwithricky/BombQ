@@ -1,0 +1,15 @@
+.btn-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.check {
+  color: #000;
+}

@@ -42,11 +42,12 @@
   height: 400px;
   width: 80%;
   border: 1px solid #eef;
-
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
   margin-top: 10px;
+  transform: border 0.2s;
   overflow: hidden;
 }
 
@@ -88,6 +89,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
+  z-index: 10;
   height: 100vh;
   background-color: rgb(255, 255, 255);
   color: #ffffff;

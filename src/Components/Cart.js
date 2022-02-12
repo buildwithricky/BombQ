@@ -1,6 +1,7 @@
 import React from "react";
 import CartItem from "./CartItem";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 // cart component
 const Cart = ({
@@ -55,6 +56,17 @@ const Cart = ({
             clear cart
           </button>
         </div>
+        <Link
+          onClick={() => {
+            setOpenCart(true);
+          }}
+          style={{
+            color: "#000",
+            textDecoration: "none",
+          }}
+          to="/checkout">
+          proceed to checkout
+        </Link>
       </div>
     </div>
   );
