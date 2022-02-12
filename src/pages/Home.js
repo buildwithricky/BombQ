@@ -37,7 +37,13 @@ const Home = () => {
             </Link>
           </div>
           <div className="image-slide">
-            <img src={transData[x].src} className="image" />
+            <div className="circle"></div>
+
+            <img
+              style={{ position: "relative" }}
+              src={transData[x].src}
+              className="image"
+            />
           </div>
         </div>
       </main>

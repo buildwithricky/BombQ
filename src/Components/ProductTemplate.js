@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { motion } from "framer";
+import PreloadImage from "react-preload-image";
 import "../css/product.css";
 import Cart from "./Cart";
 import Add from "./Add";
@@ -10,6 +11,8 @@ const Product = ({ data, cart, setCart, isCartOpen, setOpenCart }) => {
   const singlePage = data.filter((single) => single.id === routeNum);
   const products = singlePage.style;
   const [added, setAdded] = useState(false);
+
+  //use effect to display an added alert
   useEffect(() => {
     let c = setTimeout(() => {
       setAdded(false);
@@ -49,7 +52,7 @@ const Product = ({ data, cart, setCart, isCartOpen, setOpenCart }) => {
                 return (
                   <div className="product-card" key={index}>
                     <h3>{name}</h3>
-                    <img src={image} />
+                    <PreloadImage className="product-img" src={image} />
                     <div className="btn-grp">
                       <p>${single.price}</p>
                       <button

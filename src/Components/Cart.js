@@ -1,6 +1,8 @@
 import React from "react";
 import CartItem from "./CartItem";
 import { AiOutlineClose } from "react-icons/ai";
+
+// cart component
 const Cart = ({
   cart,
   setOpenCart,
@@ -9,7 +11,7 @@ const Cart = ({
   setCart,
   deleteItem,
 }) => {
-  console.log(total);
+  console.log(cart);
   return (
     <div className={isCartOpen ? "cart-main" : "cart-main open-cart"}>
       <div className="cart-content">
@@ -36,6 +38,9 @@ const Cart = ({
                 id={item.id}
                 total={total}
                 key={index}
+                quantity={item.quantity}
+                cart={cart}
+                setCart={setCart}
               />
             );
           })

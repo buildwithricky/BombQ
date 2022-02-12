@@ -16,7 +16,7 @@
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.73)
     ),
-    url("../images/catalog/Ankara/woman.jpg");
+    url("https://images.unsplash.com/photo-1583979365152-173a8f14181b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
 }
 .card:hover {
   cursor: pointer;
@@ -37,7 +37,7 @@
       rgba(255, 255, 255, 0.52),
       rgba(218, 166, 53, 0.63)
     ),
-    url("../images/catalog/Ankara/men.jpg");
+    url("https://images.unsplash.com/photo-1609408624369-d3929df82312?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
 }
 .card:nth-child(3) {
   background-position: center;
@@ -47,7 +47,7 @@
       rgba(245, 246, 252, 0.52),
       rgba(117, 19, 93, 0.33)
     ),
-    url("../images/catalog/Ankara/ima.webp");
+    url("https://images.unsplash.com/photo-1598403031688-e7cfd2c222c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
 }
 .category {
   display: flex;
