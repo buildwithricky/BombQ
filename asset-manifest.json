@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/BombQ%20/static/css/main.efd4786e.chunk.css",
+    "main.js": "/BombQ%20/static/js/main.5aebc2ea.chunk.js",
+    "main.js.map": "/BombQ%20/static/js/main.5aebc2ea.chunk.js.map",
+    "runtime-main.js": "/BombQ%20/static/js/runtime-main.f5422d60.js",
+    "runtime-main.js.map": "/BombQ%20/static/js/runtime-main.f5422d60.js.map",
+    "static/js/2.327cb7d5.chunk.js": "/BombQ%20/static/js/2.327cb7d5.chunk.js",
+    "static/js/2.327cb7d5.chunk.js.map": "/BombQ%20/static/js/2.327cb7d5.chunk.js.map",
+    "static/css/3.b5004b8f.chunk.css": "/BombQ%20/static/css/3.b5004b8f.chunk.css",
+    "static/js/3.62df543d.chunk.js": "/BombQ%20/static/js/3.62df543d.chunk.js",
+    "static/js/3.62df543d.chunk.js.map": "/BombQ%20/static/js/3.62df543d.chunk.js.map",
+    "index.html": "/BombQ%20/index.html",
+    "precache-manifest.8cff33d6c9ae7c722bd175255d072dd2.js": "/BombQ%20/precache-manifest.8cff33d6c9ae7c722bd175255d072dd2.js",
+    "service-worker.js": "/BombQ%20/service-worker.js",
+    "static/css/3.b5004b8f.chunk.css.map": "/BombQ%20/static/css/3.b5004b8f.chunk.css.map",
+    "static/css/main.efd4786e.chunk.css.map": "/BombQ%20/static/css/main.efd4786e.chunk.css.map",
+    "static/js/2.327cb7d5.chunk.js.LICENSE.txt": "/BombQ%20/static/js/2.327cb7d5.chunk.js.LICENSE.txt",
+    "static/media/BombQ.png": "/BombQ%20/static/media/BombQ.e103de44.png",
+    "static/media/shopping-bag.30f07071.svg": "/BombQ%20/static/media/shopping-bag.30f07071.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5422d60.js",
+    "static/js/2.327cb7d5.chunk.js",
+    "static/css/main.efd4786e.chunk.css",
+    "static/js/main.5aebc2ea.chunk.js"
+  ]
+}
