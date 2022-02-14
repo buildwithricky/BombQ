@@ -36,7 +36,7 @@ const Store = ({ data }) => {
 
       <motion.div className="category">
         {data.map((single, index) => {
-          const { id, image, name } = single;
+          const { id, name } = single;
 
           return (
             <motion.div

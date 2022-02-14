@@ -9,7 +9,7 @@ const Checkout = ({cart,deleteItem,total,setCart}) => {
     return  (
         <div>
             
-            {cart.length == 0 ? <div> <p>
+            {cart.length === 0 ? <div> <p>
                 No items in cart yet
                 
                 </p> 
@@ -32,17 +32,18 @@ const Checkout = ({cart,deleteItem,total,setCart}) => {
                   cart={cart}
                   setCart={setCart}
                  />
-                 <span>Total:${total}</span>
-                 <div className='btn-con'>
-                 <p className='checkout-btn' onClick={()=> alert("check out feature not ready")}>Checkout</p>
-                 </div>
+                
+                
                 </div>
                 )
                 
                
                  
             })}
-       
+             <span>Total:${total}</span>
+        <div className='btn-con'>
+                 <p className='checkout-btn' onClick={()=> alert("check out feature not ready")}>Checkout</p>
+                 </div>
         </div>
     )
   

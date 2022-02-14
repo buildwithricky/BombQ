@@ -39,6 +39,7 @@ const Home = () => {
             <div className="circle"></div>
 
             <img
+              alt="changing"
               style={{ position: "relative" }}
               src={transData[x].src}
               className="image"
