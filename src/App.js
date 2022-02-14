@@ -2,7 +2,7 @@ import React, { useState, useEffect, Suspense } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 import "./css/main.css";
 
-import { motion, AnimatePresence } from "framer";
+import { AnimatePresence } from "framer";
 import Spinner from "./Components/spinner/Spinner";
 import NavBar from "./Components/NavBar";
 import Home from "./pages/Home";
@@ -43,14 +43,15 @@ export const App = () => {
       setCart(filtered);
     }
   };
-  const getTotal = () => {
-    var totalPrice = cart.reduce(function (prevPrice, current) {
-      return prevPrice + current.price * current.quantity;
-    }, 0);
 
-    setTotal(Math.floor(totalPrice));
-  };
   useEffect(() => {
+    const getTotal = () => {
+      var totalPrice = cart.reduce(function (prevPrice, current) {
+        return prevPrice + current.price * current.quantity;
+      }, 0);
+
+      setTotal(Math.floor(totalPrice));
+    };
     getTotal();
   }, [cart]);
 

@@ -11,7 +11,7 @@ const NavBar = ({ setOpenCart, cart }) => {
     <div className="nav-container">
       <div className="nav-header">
         <div className="logo">
-          <img src={logo} height="100px" />
+          <img src={logo} alt="logo" height="100px" />
         </div>
         <div className={show ? "bars" : " bars top"}>
           <li

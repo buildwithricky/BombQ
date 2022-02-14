@@ -1,5 +1,3 @@
-import React from "react";
-
 let catalog = [
   {
     id: 1,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const CartItem = ({
   name,
@@ -50,7 +50,7 @@ const CartItem = ({
   return (
     <div className="cart-item-container">
       <div className="item-image-container">
-        <img src={image} />
+        <img src={image} alt="cart-item" />
       </div>
 
       <div className="content">

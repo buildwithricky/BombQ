@@ -24,7 +24,6 @@ const Home = () => {
     };
   }, [x]);
 
-  const { src } = transData;
   return (
     <section className="home-section">
       <main>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/store.css";
-import { motion, AnimatePresence } from "framer";
+import { motion } from "framer";
 
 const variants = {
   visible: {
@@ -42,7 +42,7 @@ const Store = ({ data }) => {
             <motion.div
               key={index}
               className="card"
-              variants={id != sid ? variants : ""}
+              variants={id !== sid ? variants : ""}
               exit="visible"
               onClick={() => setId(id)}>
               <Link to={`/productPage/${id}`}>
