@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.91d2833a.chunk.css",
-    "main.js": "/static/js/main.d5351e2d.chunk.js",
-    "main.js.map": "/static/js/main.d5351e2d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.676bffb6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.676bffb6.js.map",
-    "static/js/2.fe857547.chunk.js": "/static/js/2.fe857547.chunk.js",
-    "static/js/2.fe857547.chunk.js.map": "/static/js/2.fe857547.chunk.js.map",
+    "main.css": "/static/css/main.d639e1c9.chunk.css",
+    "main.js": "/static/js/main.83343c3c.chunk.js",
+    "main.js.map": "/static/js/main.83343c3c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0b9819c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0b9819c.js.map",
+    "static/js/2.327cb7d5.chunk.js": "/static/js/2.327cb7d5.chunk.js",
+    "static/js/2.327cb7d5.chunk.js.map": "/static/js/2.327cb7d5.chunk.js.map",
+    "static/css/3.b5004b8f.chunk.css": "/static/css/3.b5004b8f.chunk.css",
+    "static/js/3.376e5004.chunk.js": "/static/js/3.376e5004.chunk.js",
+    "static/js/3.376e5004.chunk.js.map": "/static/js/3.376e5004.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8196f2d70dfd2677429f70f87c586c83.js": "/precache-manifest.8196f2d70dfd2677429f70f87c586c83.js",
+    "precache-manifest.18dd1846dec9555826cc6af20da6e7cf.js": "/precache-manifest.18dd1846dec9555826cc6af20da6e7cf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.91d2833a.chunk.css.map": "/static/css/main.91d2833a.chunk.css.map",
-    "static/js/2.fe857547.chunk.js.LICENSE.txt": "/static/js/2.fe857547.chunk.js.LICENSE.txt",
+    "static/css/3.b5004b8f.chunk.css.map": "/static/css/3.b5004b8f.chunk.css.map",
+    "static/css/main.d639e1c9.chunk.css.map": "/static/css/main.d639e1c9.chunk.css.map",
+    "static/js/2.327cb7d5.chunk.js.LICENSE.txt": "/static/js/2.327cb7d5.chunk.js.LICENSE.txt",
     "static/media/BombQ.png": "/static/media/BombQ.e103de44.png",
-    "static/media/anka.jpg": "/static/media/anka.ff587424.jpg"
+    "static/media/shopping-bag.30f07071.svg": "/static/media/shopping-bag.30f07071.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.676bffb6.js",
-    "static/js/2.fe857547.chunk.js",
-    "static/css/main.91d2833a.chunk.css",
-    "static/js/main.d5351e2d.chunk.js"
+    "static/js/runtime-main.d0b9819c.js",
+    "static/js/2.327cb7d5.chunk.js",
+    "static/css/main.d639e1c9.chunk.css",
+    "static/js/main.83343c3c.chunk.js"
   ]
 }
