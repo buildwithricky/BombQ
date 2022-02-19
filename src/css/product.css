@@ -41,20 +41,21 @@
 .product-card {
   height: 400px;
   width: 80%;
-  border: 1px solid #eef;
+
   cursor: pointer;
   display: flex;
   flex-direction: column;
+
   margin-bottom: 40px;
   margin-top: 10px;
-  transform: border 0.2s;
+
   overflow: hidden;
 }
 
 .product-img {
   height: 60%;
   border: 1px solid #eef;
-  border-radius: 1rem;
+
   overflow: hidden;
   position: relative;
   margin-bottom: auto;
@@ -62,7 +63,6 @@
 }
 .btn-grp {
   display: flex;
-  padding-left: 0.3rem;
 }
 .btn-grp p {
   color: rgb(116, 116, 116);
@@ -75,6 +75,7 @@
   padding: 10px;
   align-self: baseline;
   border: none;
+  width: 100%;
   color: #fff;
   cursor: pointer;
   background-color: #000;
@@ -180,7 +181,6 @@
   }
   .product-card {
     height: 420px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   }
 
   .product-card img {

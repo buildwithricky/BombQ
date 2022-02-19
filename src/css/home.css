@@ -76,7 +76,6 @@
     width: 80vw;
   }
   .circle {
-    top: 34%;
-    opacity: 0.2;
+    display: none;
   }
 }

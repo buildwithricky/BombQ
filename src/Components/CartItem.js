@@ -5,7 +5,6 @@ const CartItem = ({
   image,
   price,
   deleteItem,
-  total,
   id,
   quantity,
   cart,
@@ -54,7 +53,7 @@ const CartItem = ({
       </div>
 
       <div className="content">
-        <h3>{name}ankara</h3>
+        <h3>{name}</h3>
         <h3>{}</h3>
         <h3>
           <span onClick={() => decreaseAmount(id)}>-</span> {quantity}{" "}

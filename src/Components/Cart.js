@@ -63,6 +63,7 @@ const Cart = ({
           style={{
             color: "#000",
             textDecoration: "none",
+            padding: "10px",
           }}
           to="/checkout">
           proceed to checkout
